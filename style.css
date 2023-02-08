@@ -1,0 +1,159 @@
+.cell {
+	width: 100px;
+	height: 100px;
+	border: 2px solid;
+	background-color: coral;
+	box-shadow: 6px 6px 5px 2px rgb(46, 23, 23);
+	line-height: 100px;
+	font-family: "Covered By Your Grace";
+	font-size: 95px;
+	font-weight: 100;
+	text-align: center;
+	cursor: pointer;
+	border-radius: 5px;
+	justify-content: center;
+	user-select: none;
+	color: rgb(44, 37, 37);
+}
+.cell:hover {
+	background-color: rgb(194, 86, 47);
+}
+
+.cell:active {
+	width: 98px;
+	height: 98px;
+	justify-self: center;
+	align-self: center;
+	line-height: 98px;
+}
+
+#cellContainer {
+	position: relative;
+	display: none;
+	grid-template-columns: repeat(3, auto);
+	width: 312px;
+	margin: auto;
+}
+
+#restartBtn {
+	font-family: "JetBrains Mono";
+	color: black;
+	width: 312px;
+	height: 50px;
+	background-color: coral;
+	cursor: pointer;
+	font-size: 25px;
+	font-weight: 700;
+	border-radius: 5px;
+	box-shadow: 6px 6px 5px 2px rgb(46, 23, 23);
+	border: 2px solid;
+}
+
+#restartBtn:active {
+	width: 300px;
+	height: 47px;
+	font-size: 23.5px;
+	margin-top: 2px;
+	padding-bottom: 2px;
+	margin-bottom: 1px;
+	color: black;
+}
+
+#restartBtn:hover {
+	background-color: rgb(194, 86, 47);
+}
+
+#gameDiv {
+	text-align: center;
+	margin: auto;
+	width: 500px;
+	height: fit-content;
+	font-family: "JetBrains Mono";
+	background-color: rgb(87, 219, 135);
+	padding: 30px;
+	border: 6px solid;
+	border-radius: 5px;
+	/* background-image: url(/TicTacToe/sonny.jpg); */
+	background-position: center;
+	background-size: cover;
+}
+
+#title {
+	position: relative;
+	bottom: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	width: fit-content;
+	font-style: italic;
+	font-size: 45px;
+	border: 3px solid;
+	color: black;
+	background-image: linear-gradient(
+		160deg,
+		coral,
+		orange,
+		rgb(172, 121, 207),
+		violet
+	);
+	border-color: black;
+	border-radius: 5px;
+	cursor: default;
+	padding: 5px 10px;
+	box-shadow: 6px 6px 5px 2px rgb(46, 23, 23);
+}
+
+.playerDiv {
+	position: relative;
+	top: -20px;
+	width: fit-content;
+	max-width: 350px;
+	max-height: 20px;
+	padding: 8px;
+	text-align: left;
+	border: 3px solid;
+	border-radius: 5px;
+	background-color: coral;
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow: 6px 6px 5px 2px rgb(46, 23, 23);
+}
+
+.inputPlayer::placeholder {
+	font-style: italic;
+}
+
+.okBtn {
+	background-color: coral;
+}
+
+.okBtn:hover {
+	cursor: pointer;
+}
+.inputPlayer {
+	font-family: "JetBrains Mono";
+	font-size: 15px;
+	background-color: coral;
+	border: transparent;
+	max-height: 16px;
+}
+
+.inputPlayer:hover {
+	border-bottom: 2px solid;
+	/* margin-bottom: 2px; */
+	cursor: default;
+}
+
+.inputPlayer:focus {
+	outline: none;
+	background-color: coral;
+	border-bottom: 2px solid;
+}
+
+body {
+	background-image: url(/TicTacToe/image.png);
+    background-size: 1080px;
+}
+
+#messageText {
+	font-size: 30px;
+}
